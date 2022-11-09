@@ -1,0 +1,696 @@
+﻿@font-face {
+    font-family: 'BN Miri';
+    src: url('../fonts/BN Miri.eot') format('embedded-opentype'), url('../fonts/BN Miri.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Petel';
+    src: url('../fonts/Petel.eot');
+    src: url('../fonts/Petel.ttf') format('truetype'),url('../fonts/Petel.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'horevclm-heavy-webfont';
+    src: url('../fonts/horevclm-heavy-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'shmuel';
+    src: url('../fonts/shmuel.ttf') format('truetype'),url('../fonts/shmuel.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-ExtraBold';
+    src: url('../fonts/Assistant-ExtraBold.ttf') format('truetype'),url('../fonts/Assistant-ExtraBold.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-Regular';
+    src: url('../fonts/Assistant-Regular.ttf') format('truetype'),url('../fonts/Assistant-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-SemiBold';
+    src: url('../fonts/Assistant-SemiBold.ttf') format('truetype'),url('../fonts/Assistant-SemiBold.eot') format('embedded-opentype');
+}
+body {
+    direction: rtl;
+    background-color: rgb(240,249,251);
+}
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    position:relative;
+}
+
+#logo {
+    width: 150px;
+    height: 97px;
+    display:block; /*שם בשורה לבד את האובייקט ונותן לו מעט ריווח למעלה ולמטה*/
+    margin-left: auto; /*ממרכז אוטומטי את האובייקט כך שמימין ומשמאל יהיה את אותו רווח שוליים*/
+    margin-right:auto;
+}
+#text_logo {
+    text-align: center;
+    font-family:Assistant-ExtraBold;
+    font-size:15px;
+    color:black;
+}
+#text_decoration {
+    text-decoration: none;
+}
+#navmain ul {
+    list-style: none;
+    width: 1280px;
+    margin-right: -40px;
+    /*position:fixed;*/
+}
+#navmain ul li{
+    display: inline-block;
+    float: right;
+}
+    #navmain ul li a {
+        display: block;
+        color: rgb(192,0,0);
+        background-color: rgb(240,249,251);
+        text-decoration: none;
+        text-align: center;
+        width: 213.3px;
+        height: 30px;
+        padding-top: 10px;
+        font-family: 'BN Miri';
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #navmain ul li ul li a {
+        font-family: 'BN Miri';
+        font-size: 20px;
+        font-weight: normal;
+    }
+    #navmain ul li a:hover {
+        color: rgb(0,32,96);
+        font-size:28px;
+    }
+    #navmain ul li ul li a:hover {
+        color: rgb(0,32,96);
+        font-size: 24px;
+    }        
+#navmain ul li ul {
+    display: none;
+    position: absolute;
+}
+#navmain ul li:hover ul{
+    display:block;
+    width:150px;
+}
+
+.noClick {
+    cursor: not-allowed;
+}
+
+/*************************skip*************************/
+
+#skip {
+    background-color: white;
+    z-index: 30;
+    position: absolute;
+    font-weight: 700;
+    font-size: 12pt;
+     border-radius: 8px; 
+     padding: 6px; 
+    margin-top: 14px;
+    margin-right: 11px;
+}
+
+    #skip a {
+        padding: 2px;
+        position: absolute;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+        #skip a:focus {
+            position: static;
+            width: auto;
+            height: auto;
+        }
+
+/*************************Banner*************************/
+
+#BannerRedText {
+    font-size: 60px;
+    color: rgb(192,0,0);
+    font-family: Assistant-ExtraBold;
+}
+
+.BannerBlackText {
+    font-size: 40px;
+    color: black;
+    font-family: Assistant-ExtraBold;
+    padding-left: 40px;
+}
+
+#Bannerp {
+    text-align: center;
+}
+/*************************selectlevel*************************/
+.circles-container {
+    display:flex;
+    flex-direction: column;
+}
+.h2SelectLevel {
+    text-align: center;
+    font-family: Petel;
+    color: black;
+    font-size: 65px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.selectlevelblock {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.h3selectlevel {
+    font-family: Petel;
+    color: rgb(192,0,0);
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    font-weight:lighter;
+}
+
+.h3slesh {
+    font-family: Assistant-SemiBold;
+    color: rgb(192,0,0);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.circles-container-levels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.swap-on-hover {
+    position: relative;
+}
+
+.swap-on-hover_front-image,
+.swap-on-hover_back-image {
+    transition: opacity .2s ease-in-out 0s;
+}
+
+.swap-on-hover:hover .swap-on-hover_front-image {
+    opacity: 0;
+}
+
+    .swap-on-hover:hover .swap-on-hover_back-image {
+        opacity: 1;
+    }
+
+.swap-on-hover_back-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.circle-open {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconarrow {
+    padding-right: 500px;
+
+}
+
+.hetz {
+    padding-bottom:150px;
+}
+
+
+/***********************index - open**********************/
+
+.imgs-container-levels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-selectlevelblock {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: default;
+    align-items: center;
+
+}
+
+.level-swap-on-hover {
+    position: relative;
+}
+
+.level-swap-on-hover_front-image,
+.level-swap-on-hover_back-image {
+    transition: opacity .1s ease-in-out 0s;
+}
+
+.level-swap-on-hover:hover .level-swap-on-hover_front-image {
+    opacity: 0;
+}
+
+.level-swap-on-hover:hover .level-swap-on-hover_back-image {
+    opacity: 1;
+}
+
+.level-swap-on-hover_back-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.h4selectlevel {
+    font-family: Petel;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+/*************************carousel*************************/
+
+.smallhetz {
+    padding-bottom:80px;
+}
+
+/*************************footer*************************/
+footer {
+    position: relative;
+    width: 1280px;
+    height: 30px;
+    right: auto;
+    left: auto;
+    bottom: 0;
+    background-color: rgb(219,240,245);
+    padding-top: 10px;
+}
+footer ul {
+    list-style: none;
+    margin-right:480px;
+}
+footer ul li {
+    display: inline-block;
+    float: right;
+}
+footer ul li a {
+    padding-left:50px;
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+    font-family: 'BN Miri';
+    font-size: 18px;
+}
+
+
+/*************************contact_us*************************/
+
+.lableform {
+    display: block;
+    padding-top: 15px;
+    font-family: Assistant-Regular;
+    color:black;
+}
+.lableinput {
+    display: block;
+}
+
+.h2contactus {
+    color:#468284;
+    font-family: Petel;
+    font-size: 65px;
+    padding-top: 200px;
+}
+
+
+/*************************map*************************/
+
+.h2map {
+    color: grey;
+    font-family: Assistant-SemiBold;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px, 0px;
+    text-decoration: none;
+}
+
+.h2map a {
+    color: grey;
+    font-family: Assistant-SemiBold;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px, 0px;
+    text-decoration: none;
+}
+
+.maptxt {
+    color: #468284;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/*************************mitug*************************/
+.navbc ol li {
+    display: inline-block;
+    font-family: 'BN Miri';
+    font-size: 20px;
+    /*padding-top:20px;*/
+}
+
+    .navbc ol li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbc ol li::after {
+        content: " > ";
+    }
+
+    .navbc ol li:last-child::after {
+        content: "";
+    }
+
+    .navbc ol li a:active {
+        color: rgb(0,32,96);
+    }     
+#mitugmain p {
+    font-family:Assistant;
+
+}
+#mitugparea1 {
+    margin-top: -100px;
+    width: 490px;
+    height:205px;
+    margin-right: 40px;
+}
+#mitugparea2 {
+    padding-top: -100px;
+    width: 800px;
+    height: 205px;
+    margin-right: 40px;
+    line-height:1.5;
+}
+#area3{
+    padding-top:1000px;
+}
+.h1pagetitle {
+    font-family: Petel;
+    color: rgb(0,32,96);
+    font-size: 72px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.h2mitug {
+    font-family: Petel;
+    color: rgb(0,32,96);
+    font-size: 44px;
+}
+
+.h3mitug {
+    font-family: Assistant;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin-right: 0px;
+    padding-top:5px;
+}
+
+.h4mitug {
+    font-family: Assistant;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+
+.subtitle18 {
+    font-family:Assistant;
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+
+.mitugword {
+    font-family: Assistant;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+
+.mitugtadmitword {
+    font-family: Assistant;
+    font-weight:bold;
+    color: black;
+    font-size: 24px;
+}
+
+.wordzihru {
+   font-weight: bold;
+   font-family:Assistant;
+   text-decoration:underline;
+}
+#hashuvladat {
+    padding-right: 30px;
+    font-family:Assistant;
+}
+
+#mitugwordhashuv {
+    font-size:18px;
+    color:rgb(192,0,0);
+    font-weight:bold;
+    font-family:Assistant;
+}
+#hasuvladatlastline{
+    padding-right:30px;
+    font-family:Assistant;
+}
+
+#mitugimgkiss1 {
+    font-family: Assistant;
+}
+
+#mitugimgkiss2 {
+    font-family: Assistant;
+}
+
+#mitugwordtip {
+    font-size:32px;
+    font-weight:bold;
+}
+
+#mitugimgaklim {
+    font-family: Assistant;
+}
+
+.imgmitugman {
+    padding-right: 1000px;
+    margin-top: -75px;
+}
+
+.iconsmitug {
+    margin-bottom: -10px;
+    padding-right: 0px;
+}
+
+/*************************socialmedia*************************/
+
+.subtitle20 {
+    font-family: Assistant;
+    color: black;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#socialmediavideotxt {
+
+}
+
+#h2donotdo {
+    font-family:Petel;
+    font-weight:bold;
+    font-size:44px;
+    color: rgb(0,32,96);
+}
+
+#h3donotdo {
+    font-family: Petel;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(0,32,96);
+}
+
+#h4do {
+    font-family: Petel;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#h4notdo {
+    font-family: Petel;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.wordsize20 {
+    font-size:20px;
+}
+
+.wordsize24 {
+    font-size:24px;
+}
+
+#socialmediasub32 {
+    font-family:Petel;
+    font-weight:bold;
+    font-size:32px;
+    color:black;
+}
+
+.subtitle24 {
+    font-family: Assistant;
+    color: black;
+    font-size: 24px;
+    font-weight:bold;
+}
+
+#socialmediayombelavan {
+}
+
+#socialmedianaama {
+}
+
+#socialmediaaviv {
+}
+
+/*we used the following classes (above):
+    subtitle20
+    wordbold
+    subtitle18
+*/
+
+
+
+
+/*************************success*************************/
+
+#h1subsuccess {
+    font-family: Petel;
+    font-weight: bold;
+    font-size: 72px;
+    color: rgb(94,122,128);
+    padding-right:500px;
+}
+
+
+#h2subsuccess {
+    font-family: Petel;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(94,122,128);
+    padding-right:400px;
+}
+
+#h3subsuccess {
+    font-family:Assistant-ExtraBold;
+    font-size:18px;
+    color:black;
+    padding-top:30px;
+}
+
+#h3subsuccess2 {
+    font-family: Assistant-ExtraBold;
+    font-size: 18px;
+    color: black;
+    padding-top: 30px;
+    padding-bottom:10px;
+}
+
+#h4subsuccess {
+    font-family: Assistant-ExtraBold;
+    font-size: 16px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom:10px;
+}
+
+.successtorylink {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(94,122,128);
+    width: 330px;
+    height: 30px;
+    padding-top:10px;
+}
+
+.successtorylink2 {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(94,122,128);
+    width: 330px;
+    height: 30px;
+    padding-top: 10px;
+    cursor:not-allowed;
+}
+
+div .bigprotest {
+    padding-right:800px;
+    padding-top: 40px;
+}
+
+.successtorytitle {
+    font-family: Assistant-ExtraBold;
+    font-size: 40px;
+    padding-right: 550px;
+    color: rgb(94,122,128);
+}
+
+.successtorysubtitle {
+    font-family: Assistant-ExtraBold;
+    font-size: 20px;
+    padding-right: 560px;
+    padding-top:20px;
+}
+
+
+/*************************accessibilityLink*************************/
+
+.accessibilityLink {
+    background-image: url('../imges/negishut.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 1100px;
+    top: -50px;
+}
+

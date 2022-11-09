@@ -1,0 +1,480 @@
+﻿@font-face {
+    font-family: 'BN Miri';
+    src: url('../fonts/BN Miri.eot') format('embedded-opentype'), url('../fonts/BN Miri.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Petel';
+    src: url('../fonts/Petel.eot');
+    src: url('../fonts/Petel.ttf') format('truetype'),url('../fonts/Petel.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'horevclm-heavy-webfont';
+    src: url('../fonts/horevclm-heavy-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'shmuel';
+    src: url('../fonts/shmuel.ttf') format('truetype'),url('../fonts/shmuel.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-ExtraBold';
+    src: url('../fonts/Assistant-ExtraBold.ttf') format('truetype'),url('../fonts/Assistant-ExtraBold.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-Regular';
+    src: url('../fonts/Assistant-Regular.ttf') format('truetype'),url('../fonts/Assistant-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-SemiBold';
+    src: url('../fonts/Assistant-SemiBold.ttf') format('truetype'),url('../fonts/Assistant-SemiBold.eot') format('embedded-opentype');
+}
+
+body {
+    direction: rtl;
+    background-color: white;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+#logo {
+    width: 150px;
+    height: 97px;
+    display: block; /*שם בשורה לבד את האובייקט ונותן לו מעט ריווח למעלה ולמטה*/
+    margin-left: auto; /*ממרכז אוטומטי את האובייקט כך שמימין ומשמאל יהיה את אותו רווח שוליים*/
+    margin-right: auto;
+}
+
+#text_logo {
+    text-align: center;
+    font-family: Assistant-ExtraBold;
+    font-size: 15px;
+    color: black;
+}
+
+#text_decoration {
+    text-decoration: none;
+}
+
+#navmain ul {
+    list-style: none;
+    width: 1280px;
+    margin-right: -40px;
+}
+
+    #navmain ul li {
+        display: inline-block;
+        float: right;
+    }
+
+        #navmain ul li a {
+            display: block;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            text-align: center;
+            width: 213.3px;
+            height: 30px;
+            padding-top: 10px;
+            font-family: 'BN Miri';
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #navmain ul li ul li a {
+            font-family: 'BN Miri';
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        #navmain ul li a:hover {
+            color: rgb(0,32,96);
+            font-size: 28px;
+        }
+
+        #navmain ul li ul li a:hover {
+            color: rgb(0,32,96);
+            font-size: 24px;
+        }
+
+        #navmain ul li ul {
+            display: none;
+            position: absolute;
+        }
+
+        #navmain ul li:hover ul {
+            display: block;
+            width: 150px;
+        }
+
+.noClick {
+    cursor: not-allowed;
+    color: grey;
+}
+
+
+/*************************skip*************************/
+
+.accessibility {
+    position: absolute;
+    left: -99999px;
+    height: 10px;
+    width: 10px
+}
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    #skip li {
+        list-style-type: none
+    }
+
+    #skip a {
+        position: absolute;
+        left: -99999px;
+        top: 30px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 500px;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: -4px !important;
+            font: bold 50px "Arial", "Freesans", sans-serif !important;
+            /* color information, edit this to suit the colors of your layout */
+            color: black;
+            background: transparent url(transparent.png) repeat scroll 0 0;
+            border: 1px dotted #ffb4db;
+        }
+
+
+/*************************Banner*************************/
+
+#BannerRedText {
+    font-size: 60px;
+    color: black;
+    font-family: Assistant-ExtraBold;
+}
+
+.BannerBlackText {
+    font-size: 40px;
+    color: black;
+    font-family: Assistant-ExtraBold;
+    padding-left: 40px;
+}
+
+#Bannerp {
+    text-align: center;
+}
+
+#img_rashi {
+    background-image: url('../imges/imgbanner.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1280px;
+    height: 350px;
+}
+/*************************selectlevel*************************/
+.circles-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2SelectLevel {
+    text-align: center;
+    font-family: Petel;
+    color: black;
+    font-size: 65px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.selectlevelblock {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.h3selectlevel {
+    font-family: Petel;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    font-weight: lighter;
+}
+
+.h3slesh {
+    font-family: Assistant-SemiBold;
+    color: black;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.circles-container-levels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swap-on-hover {
+    position: relative;
+}
+
+.swap-on-hover_front-image,
+.swap-on-hover_back-image {
+    transition: opacity .2s ease-in-out 0s;
+}
+
+.swap-on-hover:hover .swap-on-hover_front-image {
+    opacity: 0;
+}
+
+.swap-on-hover:hover .swap-on-hover_back-image {
+    opacity: 1;
+}
+
+.swap-on-hover_back-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.circle-open {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconarrow {
+    padding-right: 500px;
+}
+
+.hetz {
+    padding-bottom: 150px;
+}
+
+
+/***********************index - open**********************/
+
+.imgs-container-levels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-selectlevelblock {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: default;
+    align-items: center;
+}
+
+.level-swap-on-hover {
+    position: relative;
+}
+
+.level-swap-on-hover_front-image,
+.level-swap-on-hover_back-image {
+    transition: opacity .1s ease-in-out 0s;
+}
+
+.level-swap-on-hover:hover .level-swap-on-hover_front-image {
+    opacity: 0;
+}
+
+.level-swap-on-hover:hover .level-swap-on-hover_back-image {
+    opacity: 1;
+}
+
+.level-swap-on-hover_back-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+/*************************carousel*************************/
+
+/*.smallhetz {
+    padding-bottom:80px;
+}*/
+
+.pic1 {
+    background-image: url('../imges/carousel/1.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 264px;
+    display: inline-block;
+}
+
+.pic2 {
+    background-image: url('../imges/carousel/2.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 264px;
+    display: inline-block;
+}
+
+.pic3 {
+    background-image: url('../imges/carousel/3.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 264px;
+    display: inline-block;
+}
+
+.pic4 {
+    background-image: url('../imges/carousel/4.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 264px;
+    display: inline-block;
+}
+
+.pic5 {
+    background-image: url('../imges/carousel/5.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 264px;
+    display: inline-block;
+}
+
+.hetzr {
+    background-image: url('../imges/carousel/right.png');
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 70px;
+    position: relative;
+    top: 160px;
+}
+
+.hetzl {
+    background-image: url('../imges/carousel/left.png');
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 70px;
+    position: relative;
+    right: 1220px;
+    bottom: 165px;
+}
+
+.carouselpics {
+    position: relative;
+    right: 100px;
+}
+
+/*************************footer*************************/
+footer {
+    position: relative;
+    width: 1280px;
+    height: 30px;
+    right: auto;
+    left: auto;
+    bottom: 0;
+    background-color: white;
+    padding-top: 10px;
+}
+
+    footer ul {
+        list-style: none;
+        margin-right: 480px;
+    }
+
+        footer ul li {
+            display: inline-block;
+            float: right;
+        }
+
+            footer ul li a {
+                padding-left: 50px;
+                color: black;
+                text-decoration: none;
+                padding-top: 10px;
+                font-family: 'BN Miri';
+                font-size: 18px;
+            }
+
+
+
+/*************************navBC*************************/
+
+.navbc ol li {
+    display: inline-block;
+    font-family: 'BN Miri';
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+    .navbc ol li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbc ol li::after {
+        content: " > ";
+    }
+
+    .navbc ol li:last-child::after {
+        content: "";
+    }
+
+    .navbc ol li a:active {
+        color: rgb(0,32,96);
+    }
+
+
+/*************************accessibilityLink*************************/
+
+.accessibilityLink {
+    background-image: url('../imges/negishut.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 1100px;
+    top: -50px;
+}
+
+a:focus {
+    background-color: yellow;
+}

@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>אג'נדה- צרו קשר</title>
+    <meta name="description" content="המדריך לאקטיביסט המתחיל" />
+    <meta name="keywords" content="מחאה, אקטיביזם, ארגון מחאה, איך מארגנים הפגנה, הפגנה" />
+    <meta name="author" content="קרן הולצמן, אפרת בנעטיה, דניאל כץ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/contactus.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="imges/favicon.png" />
+
+</head>
+<body>
+    <div id="container">
+        <article>
+            <div id="skip">
+                <ul id="skip">
+                    <li><a href="contactus.html#contactusarea">דלג לצרו קשר</a></li>
+                </ul>
+            </div>
+            <header>
+                <a href="index.html" id="text_decoration">
+                    <img src="imges/megaphon0.png" alt="אג'נדה - דף הבית" id="logo" />
+                    <p id="text_logo">המדריך לאקטיביסט המתחיל</p><br />
+                </a>
+
+                <div>
+                    <a href="Accessible_contactus.html">
+                        <img class="accessibilityLink" src="imges/negishut.png" />
+                    </a>
+                </div>
+
+                <nav role="navigation" aria-label="תפריט ניווט ראשי" id="navmain">
+                    <ul>
+                        <li>
+                            <a class="noClick" href="#">איך מתחילים?</a>
+                            <ul>
+                                <li><a class="noClick" href="#">מגבשים רעיון</a></li>
+                                <li><a class="noClick" href="#">מתחילים לחקור</a></li>
+                                <li><a class="noClick" href="#">שאלות מנחות</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="noClick" href="#">יוצרים דיבור</a>
+                            <ul>
+                                <li><a href="socialmedia.html">רשתות חברתיות</a></li>
+                                <li><a class="noClick" href="#">פונים לתקשורת</a></li>
+                                <li><a class="noClick" href="#">מנהלים קמפיין</a></li>
+                                <li><a href="mitug.html">ממתגים מחאה</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="noClick" href="#">מזיזים עניינים</a>
+                            <ul>
+                                <li><a class="noClick" href="#">מימון המונים</a></li>
+                                <li><a class="noClick" href="#">יוצאים להפגין</a></li>
+                                <li><a class="noClick" href="#">פונים לבכירים</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="success.html">סיפורי הצלחה</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">קצת עלינו</a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">
+                                צרו קשר
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <nav class="navbc" aria-label="תפריט פרורי לחם">
+                <ol>
+                    <li><a href="index.html">דף הבית</a></li>
+                    <li>צרו קשר</li>
+                </ol>
+            </nav>
+            <section id="contactusarea">
+                <h1 id="contactush1">צרו קשר</h1>
+                <p id="contactusPbold">בואו! נעזור לכם להביא את השינוי האמיתי ולהיות אקטיביסטים מובילים</p>
+                <div id="contactusimg">
+                </div>
+                <form id="form_contact">
+                    <!-- הגדרת כתובת לשליחת המייל -->
+                    <input type="hidden" id="AgendaEmail" name="Name" value="agenda@gmail.com" />
+                    <label for="Name" class="contactuslable">
+                        שם מלא<br />
+                        <input type="text" id="Name" placeholder="הכנס שם מלא" class="contactusinput" />
+                    </label>
+                    <label for="Phone" class="contactuslable">
+                        טלפון<br />
+                        <input type="text" id="Phone" placeholder="הכנס מספר טלפון" class="contactusinput" />
+                    </label>
+                    <label for="Email" class="contactuslable">
+                        דואר אלקטרוני<br />
+                        <input type="text" id="Email" placeholder="הכנס כתובת דואר אלקטרוני" class="contactusinput" />
+                    </label>
+                    <label for="Message" class="contactuslable">
+                        איפה נתקעת?<br />
+                        <textarea id="Message" placeholder="במה נוכל לעזור?" class="contactusinput"></textarea>
+                    </label>
+                    <label for="starting" class="contactuslable">
+                        <input type="radio" id="starting" name="seniority" value="starting" />
+                        אקטיביסט מתחיל
+                    </label>
+                    <label for="experienced" class="contactuslable">
+                        <input type="radio" id="experienced" name="seniority" value="experienced" />
+                        אקטיביסט מנוסה
+                    </label>
+                    <p class="contactuslable">באיזה אזור אתה מעוניין לפעול?</p>
+                    <label for="area1" class="contactuslable">
+                        <input type="checkbox" id="area1" />
+                        מרכז
+                    </label>
+                    <label for="area2" class="contactuslable">
+                        <input type="checkbox" id="area2" />
+                        דרום
+                    </label>
+                    <label for="area3" class="contactuslable">
+                        <input type="checkbox" id="area3" />
+                        צפון
+                    </label>
+                    <label for="area4" class="contactuslable">
+                        <input type="checkbox" id="area4" />
+                        ירושלים
+                    </label>
+                    <input type="submit" id="SendForm" value="שלח" />
+                </form>
+            </section>
+            <footer>
+                <ul>
+                    <li><a href="aboutus.html">קצת עלינו</a></li>
+                    <li><a href="map.html">מפת אתר</a></li>
+                    <li><a href="contactus.html">צרו קשר</a></li>
+                </ul>
+                <br />
+                <br />
+                <pre>
+                    vectorpock©
+                </pre>
+            </footer>
+        </article>
+    </div>
+</body>
+</html>

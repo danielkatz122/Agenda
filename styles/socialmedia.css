@@ -1,0 +1,1078 @@
+﻿@font-face {
+    font-family: 'BN Miri';
+    src: url('../fonts/BN Miri.eot') format('embedded-opentype'), url('../fonts/BN Miri.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Petel';
+    src: url('../fonts/Petel.eot');
+    src: url('../fonts/Petel.ttf') format('truetype'),url('../fonts/Petel.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'horevclm-heavy-webfont';
+    src: url('../fonts/horevclm-heavy-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'shmuel';
+    src: url('../fonts/shmuel.ttf') format('truetype'),url('../fonts/shmuel.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-ExtraBold';
+    src: url('../fonts/Assistant-ExtraBold.ttf') format('truetype'),url('../fonts/Assistant-ExtraBold.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-Regular';
+    src: url('../fonts/Assistant-Regular.ttf') format('truetype'),url('../fonts/Assistant-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Assistant-SemiBold';
+    src: url('../fonts/Assistant-SemiBold.ttf') format('truetype'),url('../fonts/Assistant-SemiBold.eot') format('embedded-opentype');
+}
+
+body {
+    direction: rtl;
+    background-color: rgb(240,249,251);
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    /*position:fixed;*/
+}
+
+#logo {
+    width: 150px;
+    height: 97px;
+    display: block; /*שם בשורה לבד את האובייקט ונותן לו מעט ריווח למעלה ולמטה*/
+    margin-left: auto; /*ממרכז אוטומטי את האובייקט כך שמימין ומשמאל יהיה את אותו רווח שוליים*/
+    margin-right: auto;
+}
+
+#text_logo {
+    text-align: center;
+    font-family: Assistant-ExtraBold;
+    font-size: 15px;
+    color: black;
+}
+
+#text_decoration {
+    text-decoration: none;
+}
+
+#navmain ul {
+    list-style: none;
+    width: 1280px;
+    margin-right: -40px;
+    /*position:fixed;*/
+}
+
+    #navmain ul li {
+        display: inline-block;
+        float: right;
+    }
+
+        #navmain ul li a {
+            display: block;
+            color: rgb(192,0,0);
+            background-color: rgb(240,249,251);
+            text-decoration: none;
+            text-align: center;
+            width: 213.3px;
+            height: 30px;
+            padding-top: 10px;
+            font-family: 'BN Miri';
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #navmain ul li ul li a {
+            font-family: 'BN Miri';
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        #navmain ul li a:hover {
+            color: rgb(0,32,96);
+            font-size: 28px;
+        }
+
+        #navmain ul li ul li a:hover {
+            color: rgb(0,32,96);
+            font-size: 24px;
+        }
+
+        #navmain ul li ul {
+            display: none;
+            position: absolute;
+        }
+
+        #navmain ul li:hover ul {
+            display: block;
+            width: 150px;
+        }
+
+.noClick {
+    cursor: not-allowed;
+}
+
+
+/*************************footer*************************/
+footer {
+    position: relative;
+    width: 1280px;
+    height: 30px;
+    right: auto;
+    left: auto;
+    bottom: 0;
+    background-color: rgb(219,240,245);
+    padding-top: 10px;
+}
+
+    footer ul {
+        list-style: none;
+        margin-right: 480px;
+    }
+
+        footer ul li {
+            display: inline-block;
+            float: right;
+        }
+
+            footer ul li a {
+                padding-left: 50px;
+                color: black;
+                text-decoration: none;
+                padding-top: 10px;
+                font-family: 'BN Miri';
+                font-size: 18px;
+            }
+
+
+/*************************navBC*************************/
+
+.navbc ol li {
+    display: inline-block;
+    font-family: 'BN Miri';
+    font-size: 20px;
+    padding-top:20px;
+}
+
+    .navbc ol li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbc ol li::after {
+        content: " > ";
+    }
+
+    .navbc ol li:last-child::after {
+        content: "";
+    }
+
+    .navbc ol li a:active {
+        color: rgb(0,32,96);
+    }
+
+
+/*************************socialmedia*************************/
+/*מסגרת לאזור 1*/
+#socialmediaarea1 {
+    margin-top: 50px;
+    width: 550px;
+    margin-right: 40px;
+}
+/*כותרת ראשית*/
+.socialmediah1 {
+    font-family: Petel;
+    color: rgb(0,32,96);
+    font-size: 72px;
+    padding-top: 80px;
+    text-align: center;
+}
+/*הגדרות של פסקה*/
+.socialmediaP {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 0px;
+}
+/*הדגשת מילים בפסקה*/
+.socialmediaPbold {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+/*תמונת טיפ מומחה*/
+#socialmediaimgwomantip {
+    position: relative;
+    right: 860px;
+    top: -30px;
+    width:300px;
+    height:250px;
+}
+/*צמצום רווח*/
+#socialmediaposition1 {
+    position: relative;
+    top: -200px;
+}
+/*כותרת רמה 3*/
+.socialmediah3 {
+    font-family: Assistant;
+    color: black;
+    font-size: 20px;
+    /*padding: 15px 0px;*/
+    margin-right: 40px;
+}
+/* כותרת רמה 3 מודגש*/
+.socialmediah3bold {
+    font-family: Assistant;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*כותרת רמה 4*/
+.socialmediah4 {
+    font-family: Assistant;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0px;
+    margin-right: 40px;
+}
+/*מסגרת לאזור 2*/
+#socialmediaarea2 {
+    width: 820px;
+    margin-right: 40px;
+}
+/*מסגרת לאזור 3*/
+#socialmediaarea3 {
+    width: 550px;
+    margin-right: 40px;
+}
+/*מיקום וידיאו 1*/
+#socialmediavidio1 {
+    position: relative;
+    right: 200px;
+    top: 30px;
+}
+/*הגדרות גודל וידיאו*/
+#socialmediavidio{
+    width:500px;
+    height:282px;
+}
+/*ריווח אזור 5*/
+#socialmediaarea5 {
+    margin-top: -100px;
+}
+/*כותרת רמה 2*/
+#socialmediah2 {
+    font-family: Petel;
+    font-weight: bold;
+    font-size: 44px;
+    color: rgb(0,32,96);
+    text-align: center;
+    padding: 15px 0px;
+}
+/*כותרת רמה 3 עשה ואל תעשה*/
+#socialmediah3donotdo {
+    font-family: Petel;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(0,32,96);
+    text-align: center;
+}
+/*כותרת רמה 4 עשה*/
+#socialmediah4do {
+    font-family: Petel;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 230px;
+}
+#socialmediandoimg {
+    background-image: url('../imges/socialmedia/mando.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: 300px;
+    top: -90px;
+}
+#socialmediadoarea{
+    margin-top:-180px;
+}
+#socialmediaVpencilimg {
+    background-image: url('../imges/socialmedia/V&pencil.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 45px;
+    top: 40px;
+}
+#socialmediaV1img {
+    background-image: url('../imges/socialmedia/V.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    right: 310px;
+    top: -10px;
+}
+#socialmediaV2img {
+    background-image: url('../imges/socialmedia/V.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    right: 45px;
+    top: -10px;
+}
+/*מסגרת ל"עשה"*/
+#socialmediaborderdo {
+    border: hidden;
+    width: 550px;
+    margin-right: 40px;
+}
+/*עשה1*/
+#socialmediado1 {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 40px 0px 0px 0px;
+    width: 200px;
+}
+/*עשה2*/
+#socialmediado2 {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 260px 5px 0px;
+    width: 200px;
+}
+/*עשה3*/
+#socialmediado3 {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 0px 5px 0px;
+    width: 200px;
+}
+/*כותרת רמה 4 אל תעשה*/
+#socialmediah4notdo {
+    font-family: Petel;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 215px;
+    margin-top: -150px;
+}
+#socialmediannotdoimg {
+    background-image: url('../imges/socialmedia/mannotdo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: 300px;
+    top: -130px;
+}
+#socialmedianotdoarea {
+    margin-top:-157px;
+}
+#socialmediaX1img {
+    background-image: url('../imges/socialmedia/X.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 25px;
+    position: relative;
+    right: 45px;
+    top: 30px;
+}
+#socialmediaX2img {
+    background-image: url('../imges/socialmedia/X.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 25px;
+    position: relative;
+    right: 310px;
+    top: -10px;
+}
+#socialmediaX3img {
+    background-image: url('../imges/socialmedia/X.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 25px;
+    position: relative;
+    right: 45px;
+    top: -10px;
+}
+
+/*מסגרת ל"אל עשה"*/
+#socialmediabordernotdo {
+    border: hidden;
+    width: 550px;
+    height: 555px;
+    margin-right: 670px;
+    margin-top: -580px;
+}
+/*אל עשה1*/
+#socialmedianotdo1 {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 40px 0px 0px 0px;
+    width: 200px;
+}
+/*אל עשה2*/
+#socialmedianotdo2 {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 30px 260px 5px 0px;
+    width: 200px;
+}
+/*אל עשה3*/
+#socialmedianotdo3 {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 30px 0px 5px 0px;
+    width: 200px;
+}
+/*הגדרה למשפט סיכום של עשה ואל תעשה*/
+#socialmediah3point {
+    font-family: Assistant;
+    color: black;
+    font-size: 20px;
+    padding: 0px 0px 50px 0px;
+    margin-right: -180px;
+    margin-top:-190px;
+    text-align: center;
+}
+#socialmediawomanpointimg {
+    background-image: url('../imges/socialmedia/womanpoint.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 343px;
+    height: 240px;
+    position: relative;
+    right: 700px;
+    top: -100px;
+}
+#socialmediapointarea{
+    padding-top: -200px;
+}
+#socialmediahashtagimg {
+    background-image: url('../imges/socialmedia/hashtag.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 65px;
+    position: relative;
+    right: 40px;
+    top: 45px;
+}
+/*כותרת האשטאג*/
+#socialmidia4hashtag {
+    font-family: Assistant;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0px;
+    margin-right: 110px;
+}
+/*מסגרת לאזור 4*/
+.socialmediaarea4 {
+    width: 650px;
+    margin-right: 40px;
+}
+/*כותרת רמה 5*/
+#socialmediah5 {
+    font-family: Assistant;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0px 0px 0px;
+}
+/*רשימת ההאשטאג תחת כותרת האשטאג*/
+#socialmediahashtag {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 20px 40px 0px 0px;
+}
+/*מילים מודגשות בנושא האשטאג*/
+#socialmediahashtagbold {
+    font-size: 18px;
+    font-weight: bold;
+}
+/*מילים עם גופן גדול יותר בנושא האשטאג*/
+.socialmediahashtagextrafont {
+    font-size: 20px;
+}
+#socialmediametooimg {
+    width: 350px;
+    height: 284px;
+    position: relative;
+    right: 750px;
+    top: -100px;
+}
+#socialmedialoveinstegramimg {
+    background-image: url('../imges/socialmedia/loveinsta.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 100px;
+    top: -25px;
+}
+#socialmedialike1img {
+    background-image: url('../imges/socialmedia/like.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: -10px;
+    top: 37px;
+}
+#socialmedialike2img {
+    background-image: url('../imges/socialmedia/like.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: -10px;
+    top: 37px;
+}
+#socialmedialike3img {
+    background-image: url('../imges/socialmedia/like.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: -10px;
+    top: 37px;
+}
+#socialmedialike4img {
+    background-image: url('../imges/socialmedia/like.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: -10px;
+    top: 37px;
+}
+#socialmedialike5img {
+    background-image: url('../imges/socialmedia/like.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: -10px;
+    top: 37px;
+}
+#socialmediatwitterlogoimg {
+    background-image: url('../imges/socialmedia/logotwittwr.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    right: 65px;
+    top: 75px;
+}
+/*מסגרת לאזור 4*/
+.socialmediatacticarea {
+    width: 950px;
+    margin-right: 40px;
+}
+/*כותרת טקטיקות חלק 1*/
+#socialmediah4tactic1 {
+    font-family: Assistant;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 40px 20px 0px;
+    margin-top:-80px;
+}
+/*כותרת טקטיקות חלק 2*/
+#socialmediah4tactic2 {
+    font-family: Assistant;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 70px;
+}
+/*הדגשת מילים ראשונות בכל טקטיקה*/
+.socialmediatacticpbold {
+    font-family: Assistant;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+/*מילים מודגשות בגודל הפונט בפסקאות של טקטיקטות*/
+.socialmediaPhadgash {
+    font-family: Assistant;
+    color: black;
+    font-size: 20px;
+}
+/*פסקה נוספת פנימית- תחת טקטיקת תיעוד הפעילות*/
+#socialmediaPtiud {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 150px 5px 0px;
+}
+/*כותרת רמה 2 פונט פטל*/
+#socialmediah2petel {
+    font-family: Petel;
+    font-weight: bold;
+    font-size: 44px;
+    color: rgb(0,32,96);
+    text-align: center;
+    padding: 45px 0px;
+}
+#socialmedia3img {
+    background-image: url('../imges/socialmedia/socialmedia.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 900px;
+    height: 322px;
+    position: relative;
+    right: -10px;
+    top: 35px;
+}
+/*הגדרת גופן עבור כותרת הרשת*/
+.socialmediah5reshatot1 {
+    font-family: Assistant-Regular;
+    color: black;
+    font-size: 20px;
+}
+/*הגדרת גופן עבור שם הרשת*/
+.socialmediah5reshatot2 {
+    font-family: Assistant-Regular;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(192,0,0);
+}
+/*הגדרת מסגרת לטקסט עבור כל רשת*/
+.socialmediaareaborder {
+    border: hidden;
+    width: 650px;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(215,239,244)
+}
+/*יוצר מרכוז של הרשתות מתחת*/
+.socialmediacenter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#socialmediafacebppkexampleimg {
+    background-image: url('../imges/socialmedia/facebppkexample.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 177px;
+    position: relative;
+    right: 35px;
+    top: 25px;
+}
+/*תאור תמונה גלעד שליט*/
+#socialmediagilad {
+    width: 180px;
+    padding-right: 300px;
+    margin-top: -120px;
+}
+#socialmediainstegramexampleimg {
+    background-image: url('../imges/socialmedia/instegramexample.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 217px;
+    position: relative;
+    right: 35px;
+    top: 15px;
+}
+/*תאור תמונה נעמה יישכר*/
+#socialmedianaama {
+    width: 240px;
+    padding-right: 300px;
+    margin-top: -160px;
+}
+#socialmediatwitterexampleimg {
+    background-image: url('../imges/socialmedia/twitterexample.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 180px;
+    height: 286px;
+    position: relative;
+    right: 35px;
+    top: 15px;
+}
+/*תאור תמונה אביב ערבי*/
+#socialmediaaviv {
+    width: 180px;
+    padding-right: 300px;
+    margin-top: -200px;
+}
+#socialmediabutton1img {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    right: 400px;
+    top: 65px;
+}
+#socialmediabutton2img {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    right: 400px;
+    top: 15px;
+}
+#socialmediabutton3img {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    right: 400px;
+    top: 30px;
+}
+
+/*מסגרת לטיפ מומחה*/
+#socialmediaborderTIP {
+    border: hidden;
+    width: 300px;
+    height: 300px;
+    margin-top: -340px;
+    margin-right: 550px;
+    margin-bottom: 150px;
+    background-color: rgb(215,239,244)
+}
+/*הגדרות פסקה של טיפ*/
+.socialmediaPTIP {
+    font-family: Assistant;
+    color: black;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 5px 15px;
+    width: 230px;
+}
+/*הגדרות כותרת של טיפ*/
+#socialmediaPTIPbold {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+/*הגדרות תמונה של טיפ מומחה בתוך המסגרת*/
+#socialmediawomanTIPinimg {
+    background-image: url('../imges/socialmedia/womanTIPin.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 125px;
+    position: relative;
+    right: 40px;
+    top: -15px;
+}
+/*תמונת טיפ מומחה סגור*/
+#socialmediaimgwomantipclose {
+    position: relative;
+    right: 885px;
+    top: -40px;
+    width: 300px;
+    height: 212px;
+}
+#socialmediametooclose {
+    border: hidden;
+    width: 600px;
+    height: 300px;
+    margin-top: -170px;
+    margin-right: 480px;
+    margin-bottom: 90px;
+    background-color: rgb(215,239,244)
+}
+/*הגדרות משפט מודגש של סיפור METOO*/
+#socialmediaPmetoobold {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+/*הגדרות פסקה של סיפור METOO*/
+.socialmediaPmetoo {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 15px;
+    width:320px;
+}
+
+#socialmediametoocloseimg {
+    position: relative;
+    right: 330px;
+    top: -240px;
+    width: 300px;
+    height: 212px;
+}
+/*מסגרת לפייסבוק...*/
+#socialmediaareaborderfacebook {
+    border: hidden;
+    width: 650px;
+    height: 566px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(215,239,244)
+}
+/*כותרת לשמעת ש...*/
+.socialmediatitle {
+    font-family: Assistant;
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+/*הגדרות של פסקה בדף פייסבוק*/
+.socialmediaPfacbookexample {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 15px;
+    width:320px;
+}
+/*הגדרה למשפט חריג בשמעת ש.. פייסבוק*/
+#socialmediaPfacbook {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 15px;
+    width: 540px;
+}
+/*תמונת דוגמא פייסבוק1*/
+#socialmediafacebookexample2img {
+    background-image: url('../imges/socialmedia/facebookexample2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 235px;
+    height: 230px;
+    position: relative;
+    right: 385px;
+    top: -266px;
+}
+/*תמונת דוגמא פייסבוק2*/
+#socialmediapropileimg {
+    background-image: url('../imges/socialmedia/propile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 214px;
+    position: relative;
+    right: 60px;
+    top: -220px;
+}
+/*כפתור סגור של פייסבוק...*/
+#socialmediaclosefacbookimg {
+    position: relative;
+    right: 510px;
+    top: -240px;
+    width: 100px;
+    height: 40px;
+}
+/*תמונה אינסטגרם 1*/
+#socialmediainstegramexample2img {
+    background-image: url('../imges/socialmedia/instegramexample2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 195px;
+    height: 240px;
+    position: relative;
+    right: 420px;
+    top: -265px;
+}
+/*תמונה אינסטגרם 2*/
+#socialmediainstegramexample3img {
+    background-image: url('../imges/socialmedia/instegramexample3.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 432px;
+    height: 477px;
+    position: relative;
+    right: 105px;
+    top: -220px;
+}
+/*כפתור סגור אינסטגרם*/
+#socialmediacloseinstegramimg {
+    position: relative;
+    right: 510px;
+    top: -205px;
+    width: 100px;
+    height: 40px;
+}
+/*מסגרת לאינסטגרם*/
+#socialmediaareaborderinstegram {
+    border: hidden;
+    width: 650px;
+    height: 950px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(215,239,244)
+}
+/*הגדרות של פסקה באינסטגרם*/
+.socialmediaPinstegramexample {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 15px 120px 5px;
+    width: 320px;
+}
+/*הגדרה למשפט חריג בשמעת ש.. אינסטגרם*/
+.socialmediaPinstegram {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 15px;
+    width: 600px;
+}
+/*כפתור סגור של טוויטר...*/
+#socialmediaclosetwitterimg {
+    position: relative;
+    right: 510px;
+    top: 5px;
+    width: 100px;
+    height: 40px;
+}
+/*הגדרה למשפט חריג בשמעת ש.. אינסטגרם*/
+.socialmediaPtwitter {
+    font-family: Assistant;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 15px;
+    width: 540px;
+}
+/*מסגרת לאינסטגרם...*/
+#socialmediaareabordertwitter {
+    border: hidden;
+    width: 650px;
+    height: 275px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(215,239,244)
+}
+
+
+/*************************skip*************************/
+
+.accessibility {
+    position: absolute;
+    left: -99999px;
+    height: 10px;
+    width: 10px
+}
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    #skip li {
+        list-style-type: none
+    }
+
+    #skip a {
+        position: absolute;
+        left: -99999px;
+        top: 30px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 500px;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: -4px !important;
+            font: bold 50px "Arial", "Freesans", sans-serif !important;
+            /* color information, edit this to suit the colors of your layout */
+            color: black;
+            background: transparent url(transparent.png) repeat scroll 0 0;
+            border: 1px dotted #ffb4db;
+        }
+
+
+/*************************accessibilityLink*************************/
+
+.accessibilityLink {
+    background-image: url('../imges/negishut.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 1100px;
+    top: -50px;
+}
+
+a:focus {
+    background-color: yellow;
+}
